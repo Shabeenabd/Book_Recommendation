@@ -25,7 +25,7 @@ def recommend_book(book):
 st.set_page_config(layout="wide")
 _,c,_=st.columns([1,5,1])
 with c:
-    st.title('Book Recommendation System_',anchor=False)    
+    st.title('Book Recommendation System',anchor=False)    
 st.title('') 
 _,center,_=st.columns([1,5,1])
 with center:
@@ -40,7 +40,7 @@ with center:
             st.image(temp[4],width=300)
             
     with details:
-            for i in range(5):
+            for i in range(3):
                     st.title('')
             st.markdown(f'<b style="font-size:20px;">Author &nbsp;&nbsp;:&nbsp;&nbsp; &nbsp;&nbsp;</b><b style="font-size:30px;">{str(temp[1])}</b>', unsafe_allow_html=True)
             st.markdown(f'<b style="font-size:20px;">Year &nbsp;&nbsp;:&nbsp;&nbsp; &nbsp;&nbsp;</b><b style="font-size:30px;">{str(temp[2])}</b>', unsafe_allow_html=True)
