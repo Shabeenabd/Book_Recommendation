@@ -36,7 +36,7 @@ with center:
     _,img,details,_=st.columns([.5,4,3  ,.5])
     with img:
             st.title(temp[0])
-            # st.title('')
+            st.title('')
             st.image(temp[4],width=300)
             
     with details:
