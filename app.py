@@ -36,7 +36,7 @@ with center:
     _,img,details,_=st.columns([.5,4,3  ,.5])
     with img:
             st.title(temp[0])
-            st.title('')
+            # st.title('')
             st.image(temp[4],width=300)
             
     with details:
@@ -48,7 +48,6 @@ with center:
             st.markdown(f'<b style="font-size:20px;"> Rating &nbsp;&nbsp;:&nbsp;&nbsp; &nbsp;&nbsp;</b><b style="font-size:30px;">{np.round(temp[5],1)}</b>', unsafe_allow_html=True)
 
 
-    st.title('')
     st.title('')
     _,ctntn,_=st.columns(3)
     with ctntn:
