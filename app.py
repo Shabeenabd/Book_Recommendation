@@ -25,7 +25,7 @@ def recommend_book(book):
 st.set_page_config(layout="wide")
 _,c,_=st.columns([1,5,1])
 with c:
-    st.title('Book Recommendation System',anchor=False)    
+    st.title('Book Recommendation System_',anchor=False)    
 st.title('') 
 _,center,_=st.columns([1,5,1])
 with center:
