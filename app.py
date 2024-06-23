@@ -3,9 +3,9 @@ import pickle
 import numpy as np
 import time
 
-book_data=pickle.load(open('../artifacts/book_data.pkl','rb'))
-similarity_data=pickle.load(open('../artifacts/similarity_data.pkl','rb'))
-popular_books=pickle.load(open('../artifacts/top_50_books.pkl','rb'))
+book_data=pickle.load(open('artifacts/book_data.pkl','rb'))
+similarity_data=pickle.load(open('artifacts/similarity_data.pkl','rb'))
+popular_books=pickle.load(open('artifacts/top_50_books.pkl','rb'))
 
 def get_book_details(book):
     book_details=np.array(book_data[book_data['Book-Title']==book])[0]
