@@ -31,6 +31,7 @@ def render(selected_book):
             _,img,details=st.columns([1,4,4])
             with img:
                 st.title(temp[0])
+                st.write('')
                 st.image(temp[4],width=250)
                 st.title('')
             with details:
