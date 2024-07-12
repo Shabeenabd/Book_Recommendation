@@ -31,10 +31,11 @@ def render(selected_book):
             _,img,details=st.columns([1,4,4])
             with img:
                 st.title(temp[0])
+                st.title('')
                 st.image(temp[4],width=250)
                 st.title('')
             with details:
-                for i in range(4):
+                for i in range(2):
                         st.title('')
                 st.markdown(f'<b style="font-size:20px;">Author &nbsp;&nbsp;:&nbsp;&nbsp; &nbsp;&nbsp;</b><b style="font-size:30px;">{str(temp[1])}</b>', unsafe_allow_html=True)
                 st.markdown(f'<b style="font-size:20px;">Year &nbsp;&nbsp;:&nbsp;&nbsp; &nbsp;&nbsp;</b><b style="font-size:30px;">{str(temp[2])}</b>', unsafe_allow_html=True)
